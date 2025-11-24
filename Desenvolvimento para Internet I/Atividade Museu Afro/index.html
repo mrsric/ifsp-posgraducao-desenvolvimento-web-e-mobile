@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memórias Afro-Brasileiras</title>
+    <link rel="icon" type="image/png" href="img/Logo.png">
+
+    <!-- Bootstrap CSS (v4 – compatível com o material da disciplina) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- CSS próprio -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO / MENU -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand font-weight-bold" href="#home">
+                <img src="img/logo.png" width="42" alt="Logo Museu Afro Digital"> Museu Digital – Memórias Afro-Brasileiras
+            </a>
+
+            <!-- Botão do menu (responsivo) -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+                aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Itens do menu -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Início <span class="sr-only">(atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lei">Lei 10.639/03</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#linha-do-tempo">Linha do tempo</a>
+                    </li>
+
+                    <!-- Dropdown de acervos -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropAcervo" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Acervo Digital
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropAcervo">
+                            <a class="dropdown-item" href="#registros">Documentos históricos</a>
+                            <a class="dropdown-item" href="#personalidades">Personalidades</a>
+                            <a class="dropdown-item" href="#educacao">Educação e escolas</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- BANNER / CARROSSEL -->
+    <header id="home" class="container-fluid p-0">
+        <div id="bannerMemorias" class="carousel slide" data-ride="carousel">
+            <!-- indicadores -->
+            <ul class="carousel-indicators">
+                <li data-target="#bannerMemorias" data-slide-to="0" class="active"></li>
+                <li data-target="#bannerMemorias" data-slide-to="1"></li>
+                <li data-target="#bannerMemorias" data-slide-to="2"></li>
+            </ul>
+
+            <!-- imagens -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/capa1.png" class="d-block w-100" alt="Comunidade quilombola">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Memória Afro-Brasileira</h5>
+                        <p>Preservar histórias, imagens e vozes de uma maioria ainda invisibilizada.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/capa2.png" class="d-block w-100" alt="Arquivos e documentos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Acervos Digitais</h5>
+                        <p>O digital como ferramenta política para recontar a história.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/capa3.png" class="d-block w-100" alt="Juventude negra conectada">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Educação e Lei 10.639/03</h5>
+                        <p>História da África e da cultura afro-brasileira nas escolas brasileiras.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- controles -->
+            <a class="carousel-control-prev" href="#bannerMemorias" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#bannerMemorias" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- SEÇÃO LEI 10.639 / CONTEXTO -->
+    <section id="lei" class="py-5 section-clara">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 mb-4">
+                    <h2 class="titulo-secao">Lei 10.639/03 e o direito à memória</h2>
+                    <p>
+                        A Lei Federal nº 10.639/2003 tornou obrigatório o ensino de História e Cultura
+                        Afro-Brasileira e Africana em todas as escolas de educação básica no Brasil.
+                        A lei nasce da luta do movimento negro, que denunciou o apagamento sistemático
+                        das contribuições africanas na construção do país.
+                    </p>
+                    <p>
+                        Para que essa lei seja efetiva, não basta “incluir um conteúdo” no currículo:
+                        é necessário revisar arquivos, coleções, sistemas de indexação e formas de
+                        narrar o passado, como aponta o projeto do Museu Afro Digital da Memória
+                        Africana e Afro-Brasileira.
+                    </p>
+                    <p>
+                        O presente site simula um <strong>museu digital de pequena escala</strong>,
+                        pensado como apoio a professores, estudantes e comunidades que desejam
+                        (re)construir suas memórias.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <div class="card sombra-suave">
+                        <div class="card-body">
+                            <h5 class="card-title">Por que um museu digital?</h5>
+                            <ul class="lista-marcadores">
+                                <li>Aproxima acervos de pessoas que não têm acesso a museus físicos.</li>
+                                <li>Permite combinar textos, imagens, vídeos e áudios.</li>
+                                <li>Facilita cooperação entre escolas, universidades e comunidades.</li>
+                                <li>Ajuda a enfrentar o racismo ao tornar visível o que foi silenciado.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LINHA DO TEMPO (GRID BOOTSTRAP) -->
+    <section id="linha-do-tempo" class="py-5 section-escura text-light">
+        <div class="container">
+            <h2 class="titulo-secao mb-4 text-center">Linha do tempo da memória afro-brasileira</h2>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card card-timeline h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Séculos XVI–XIX</h5>
+                            <p class="card-text">
+                                Tráfico transatlântico de africanos escravizados. Nas fazendas, minas,
+                                cidades e quilombos, formam-se culturas afrodiaspóricas que marcam
+                                profundamente a língua, a religião, a música e o trabalho no Brasil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card card-timeline h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">1888–1988</h5>
+                            <p class="card-text">
+                                Fim formal da escravidão, mas permanência das desigualdades raciais.
+                                A cultura negra é apropriada como “folclore nacional”, enquanto
+                                museus e arquivos oficiais pouco registram os conflitos e as lutas do
+                                povo negro.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card card-timeline h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Anos 2000 em diante</h5>
+                            <p class="card-text">
+                                Fortalecimento das políticas de ação afirmativa, das cotas e da
+                                patrimonialização de bens culturais afro-brasileiros. Surgem
+                                iniciativas de museus comunitários e digitais, como o
+                                <em>Museu Afro Digital</em>, que inspiram este projeto.                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGISTROS HISTÓRICOS / CARDS -->
+    <section id="registros" class="py-5 section-clara">
+        <div class="container">
+            <h2 class="titulo-secao mb-4 text-center">Registros históricos em destaque</h2>
+            <p class="text-center mb-5">
+                Abaixo estão exemplos de tipos de documentos que um museu digital pode reunir:
+                textos, fotografias, jornais e relatos orais. Para a atividade, considerei apenas exemplificativa.
+            </p>
+
+            <div class="row">
+                <!-- Documento 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 sombra-suave">
+                        <div class="card-body">
+                            <h5 class="card-title">Jornais do movimento negro</h5>
+                            <p class="card-text">
+                                Periódicos como <em>O Clarim d’Alvorada</em> e <em>Jornal do MNU</em> registram
+                                denúncias de racismo e propostas políticas desde o início do século XX.
+                            </p>
+                            <small class="text-muted">Tipo: imprensa alternativa</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 sombra-suave">
+                        <div class="card-body">
+                            <h5 class="card-title">Fotografias de terreiros</h5>
+                            <p class="card-text">
+                                Imagens de mães e pais de santo, festas, objetos sagrados e espaços de
+                                culto ajudam a registrar a centralidade das religiões de matriz africana.
+                            </p>
+                            <small class="text-muted">Tipo: acervo fotográfico</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 sombra-suave">
+                        <div class="card-body">
+                            <h5 class="card-title">Depoimentos orais</h5>
+                            <p class="card-text">
+                                Entrevistas com lideranças comunitárias, quilombolas, artistas e
+                                educadores preservam memórias que muitas vezes nunca foram escritas.
+                            </p>
+                            <small class="text-muted">Tipo: relato oral</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 sombra-suave">
+                        <div class="card-body">
+                            <h5 class="card-title">Arquivos pessoais</h5>
+                            <p class="card-text">
+                                Cartas, cadernos, fotografias de família e documentos de trabalho
+                                permitem reconstruir trajetórias de intelectuais e trabalhadores negros.
+                            </p>
+                            <small class="text-muted">Tipo: acervo pessoal</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERSONALIDADES (GRID) -->
+    <section id="personalidades" class="py-5 section-escura text-light">
+        <div class="container">
+            <h2 class="titulo-secao mb-4 text-center">Personalidades afro-brasileiras</h2>
+            <div class="row">
+                <!-- Luiza Mahin -->
+                <div class="col-md-4 mb-4">
+                    <div class="card card-personalidade text-center sombra-suave">
+                        <img src="img/luiza-mahin.jpg" class="foto-personalidade mx-auto d-block"
+                            alt="Retrato ilustrativo de Luiza Mahin">
+                        <div class="card-body">
+                            <h5 class="card-title">Luiza Mahin (séc. XIX)</h5>
+                            <p class="card-text">
+                                Figura associada às rebeliões negras na Bahia, como a Revolta dos Malês.
+                                Representa a resistência de mulheres negras contra a escravidão.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Abdias Nascimento -->
+                <div class="col-md-4 mb-4">
+                    <div class="card card-personalidade text-center sombra-suave">
+                        <img src="img/abdias-nascimento.jpg" class="foto-personalidade mx-auto d-block"
+                            alt="Retrato ilustrativo de Abdias Nascimento">
+                        <div class="card-body">
+                            <h5 class="card-title">Abdias Nascimento</h5>
+                            <p class="card-text">
+                                Intelectual, artista e político. Fundador do Teatro Experimental do Negro
+                                e referência na luta antirracista e na defesa de políticas afirmativas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lélia Gonzalez -->
+                <div class="col-md-4 mb-4">
+                    <div class="card card-personalidade text-center sombra-suave">
+                        <img src="img/lelia-gonzalez.jpg" class="foto-personalidade mx-auto d-block"
+                            alt="Retrato ilustrativo de Lélia Gonzalez">
+                        <div class="card-body">
+                            <h5 class="card-title">Lélia Gonzalez</h5>
+                            <p class="card-text">
+                                Filósofa e militante feminista negra. Propôs o conceito de “amefricanidade”
+                                e denunciou o racismo e o sexismo nas estruturas do Estado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- EDUCAÇÃO / LEI NAS ESCOLAS -->
+    <section id="educacao" class="py-5 section-clara">
+        <div class="container">
+            <h2 class="titulo-secao mb-4 text-center">Educação, escola e museu digital</h2>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <p>
+                        O artigo sobre o Museu Afro Digital destaca que os grandes arquivos
+                        brasileiros raramente priorizaram a chamada “questão negra” em suas
+                        coleções, descritores e exposições, o que dificulta o trabalho de
+                        professores que precisam implementar a Lei 10.639/03.
+                    </p>
+                    <p>
+                        Um museu digital escolar pode:
+                    </p>
+                    <ul class="lista-marcadores">
+                        <li>Mapear memórias locais (bairros, escolas, famílias, terreiros, blocos, times);</li>
+                        <li>Digitalizar fotos antigas e entrevistar moradores mais velhos;</li>
+                        <li>Criar exposições temáticas (trabalho, religiosidade, música, futebol);</li>
+                        <li>Conectar-se a iniciativas maiores, como o Museu Afro Digital da UFBA.</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card sombra-suave">
+                        <div class="card-body">
+                            <h5 class="card-title">Sugestão de atividade para a escola</h5>
+                            <ol class="lista-marcadores">
+                                <li>Organizar grupos de estudantes para pesquisar histórias de pessoas negras da
+                                    comunidade.</li>
+                                <li>Digitalizar fotos e documentos autorizados pelas famílias.</li>
+                                <li>Criar legendas que expliquem o contexto de cada registro.</li>
+                                <li>Publicar tudo em um site escolar em Bootstrap, inspirado neste modelo.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="py-5 section-escura text-light">
+        <div class="container">
+            <h2 class="titulo-secao mb-4 text-center">Contato e créditos</h2>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <p>
+                        Este site foi desenvolvido como projeto acadêmico de pós-graduação em
+                        Desenvolvimento Web e Mobile do IFSP, utilizando o framework Bootstrap e boas práticas de
+                        design responsivo.
+                    </p>
+                    <p>
+                        O objetivo é demonstrar, de forma didática, como tecnologias web podem
+                        apoiar políticas de memória, valorizando a história e a cultura
+                        afro-brasileira.
+                    </p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" class="form-control" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" class="form-control" placeholder="nome@exemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" rows="3" class="form-control"
+                                placeholder="Sugestões de acervo, histórias e contatos..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-light btn-block">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="text-center py-3 rodape">
+        <small>
+            &copy; 2025 – Museu Digital de Memórias Afro-Brasileiras. Projeto acadêmico sem fins lucrativos.
+        </small>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

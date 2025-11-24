@@ -1,0 +1,89 @@
+/* Reset leve */
+* {
+    box-sizing: border-box;
+}
+
+/* Tipografia geral */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Seções temáticas */
+.section-clara {
+    background-color: #f7f5f0;
+}
+
+.section-escura {
+    background-color: #241c20;
+}
+
+/* Títulos de seção */
+.titulo-secao {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Cartões com sombra */
+.sombra-suave {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    border: none;
+}
+
+/* Cartões da linha do tempo */
+.card-timeline {
+    background-color: #2f2732;
+    color: #f7f5f0;
+}
+
+/* Ícones simples para personalidades */
+.icone-personagem {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f4b41a;
+    color: #241c20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+/* Cartões de personalidades */
+.card-personalidade {
+    background-color: #241c20; /* combina com a section-escura */
+    border: none;
+    color: #f7f5f0;
+}
+
+/* Foto redonda das personalidades */
+.foto-personalidade {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1.5rem;
+    border: 4px solid #f4b41a; /* amarelo dos círculos que você usava antes */
+}
+
+
+/* Rodapé */
+.rodape {
+    background-color: #111;
+    color: #f7f7f7;
+}
+
+/* Ajustes do carousel: altura mínima em telas grandes */
+#bannerMemorias .carousel-item img {
+    max-height: 550px;
+    object-fit: cover;
+}
+
+/* Pequenos ajustes responsivos */
+@media (max-width: 576px) {
+    #bannerMemorias .carousel-caption {
+        font-size: 0.9rem;
+    }
+}
+
+
